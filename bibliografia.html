@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibliografia — Cibersegurança</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+      <div class="logo">
+        <a aria-label="CyberBloom home" href="index.html">
+          <img alt="CyberBloom" src="img/logo.jpg" />
+          <span class="site-name">CyberBloom</span>
+        </a>
+      </div>
+      <button
+        aria-controls="navLinks"
+        aria-expanded="false"
+        aria-label="Open menu"
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+      >
+        ☰
+      </button>
+      <nav aria-label="Main navigation" class="main-nav">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="sobre.html">SOBRE</a></li>
+          <li class="dropdown">
+            <button
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="dropbtn"
+              type="button"
+            >
+              CIBERSEGURANÇA <span aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="malware.html">Malware</a></li>
+              <li><a href="engenhariasocial.html">Golpes</a></li>
+              <li><a href="ataques.html">Ataques</a></li>
+              <li><a href="protecao.html">Segurança</a></li>
+            </ul>
+          </li>
+          <li><a class="active" href="bibliografia.html">BIBLIOGRAFIA</a></li>
+          <li class="dropdown">
+            <button
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="dropbtn"
+              type="button"
+            >
+              CRÉDITOS <span aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="creditos.html">Orientadores</a></li>
+              <li><a href="creditos2.html">Desenvolvedores</a></li>
+            </ul>
+          </li>
+          <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+      </nav>
+      <div class="flags" aria-label="Language selection">
+        <a href="index.html" aria-label="Português">
+          <img src="img/brazilian_flag.jpg" class="flag" alt="Português" />
+        </a>
+        <a href="index-en.html" aria-label="English">
+          <img src="img/united_states_flag.jpg" class="flag" alt="English" />
+        </a>
+      </div>
+    </header>
+  <main>
+    <section class="intro">
+      <div class="intro-text">
+        <div class="decor-title">
+          <i></i><b>✦</b><b>✦</b>
+        </div>
+
+        <h1>BIBLIOGRAFIA</h1>
+        <div class="pink-line"></div>
+
+        <p>
+          Confira as principais fontes que<br>
+          utilizamos para construir o conteúdo<br>
+          deste site sobre cibersegurança.
+        </p>
+      </div>
+
+      <img class="hero-art" src="img/hero-bibliografia.jpg" alt="Livros empilhados com um escudo e cadeado">
+    </section>
+
+    <section class="sources">
+
+      <article class="source-card">
+        <img class="source-logo" src="img/logo-cert.jpg" alt="CERT.br">
+        <div class="source-content">
+          <h2>CERT.br <span>— Centro de Estudos, Resposta e Tratamento de Incidentes de Segurança no Brasil</span></h2>
+          <p>Referência nacional em segurança da informação, com publicações, alertas<br class="desktop"> e boas práticas para usuários e organizações.</p>
+          <a href="https://www.cert.br/" target="_blank" rel="noopener">https://www.cert.br/</a>
+        </div>
+        <a class="external" href="https://www.cert.br/" target="_blank" rel="noopener" aria-label="Abrir CERT.br">↗</a>
+      </article>
+
+      <article class="source-card">
+        <img class="source-logo" src="img/logo-gov.jpg" alt="gov.br">
+        <div class="source-content">
+          <h2>Governo Digital <span>— Estratégia de Segurança Cibernética</span></h2>
+          <p>Documentos e diretrizes oficiais sobre a política nacional de segurança da<br class="desktop"> informação e proteção de dados.</p>
+          <a href="https://www.gov.br/governodigital/pt-br/seguranca-e-protecao" target="_blank" rel="noopener">https://www.gov.br/governodigital/pt-br/seguranca-e-protecao</a>
+        </div>
+        <a class="external" href="https://www.gov.br/governodigital/pt-br/seguranca-e-protecao" target="_blank" rel="noopener" aria-label="Abrir Governo Digital">↗</a>
+      </article>
+
+      <article class="source-card">
+        <img class="source-logo" src="img/logo-nic.jpg" alt="NIC.br">
+        <div class="source-content">
+          <h2>NIC.br <span>— Núcleo de Informação e Coordenação do Ponto BR</span></h2>
+          <p>Estudos, pesquisas e indicadores sobre o uso da internet no Brasil e<br class="desktop"> segurança no ambiente digital.</p>
+          <a href="https://www.nic.br/" target="_blank" rel="noopener">https://www.nic.br/</a>
+        </div>
+        <a class="external" href="https://www.nic.br/" target="_blank" rel="noopener" aria-label="Abrir NIC.br">↗</a>
+      </article>
+
+      <article class="source-card">
+        <img class="source-logo" src="img/logo-cisa.jpg" alt="CISA">
+        <div class="source-content">
+          <h2>CISA <span>— Cybersecurity &amp; Infrastructure Security Agency</span></h2>
+          <p>Agência do governo dos EUA com guias, alertas e recursos sobre<br class="desktop"> cibersegurança e proteção de infraestruturas críticas.</p>
+          <a href="https://www.cisa.gov/" target="_blank" rel="noopener">https://www.cisa.gov/</a>
+        </div>
+        <a class="external" href="https://www.cisa.gov/" target="_blank" rel="noopener" aria-label="Abrir CISA">↗</a>
+      </article>
+
+      <article class="source-card">
+        <img class="source-logo" src="img/logo-enisa.jpg" alt="ENISA">
+        <div class="source-content">
+          <h2>ENISA <span>— European Union Agency for Cybersecurity</span></h2>
+          <p>Relatórios, boas práticas e recomendações da União Europeia para<br class="desktop"> promover a cibersegurança.</p>
+          <a href="https://www.enisa.europa.eu/" target="_blank" rel="noopener">https://www.enisa.europa.eu/</a>
+        </div>
+        <a class="external" href="https://www.enisa.europa.eu/" target="_blank" rel="noopener" aria-label="Abrir ENISA">↗</a>
+      </article>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <img src="img/footer-art.jpg" alt="Ilustração decorativa com gato e elementos de cibersegurança">
+  </footer>
+
+</body>
+</html>

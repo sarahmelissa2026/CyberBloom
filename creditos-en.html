@@ -1,0 +1,206 @@
+<!doctype html>
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Project Credits - Advisors</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="img/formu.png" rel="icon" type="image/png" />
+    <link href="https://cloudflare.com" rel="stylesheet" />
+    <link href="https://googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://gstatic.com" rel="preconnect" />
+    <link
+      href="https://googleapis.com/css2?family=Fredoka:wght@300..700&amp;family=Nunito:ital,wght@0,200..1000;1,200..1000&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <a aria-label="CyberBloom home" href="index-en.html">
+          <img alt="CyberBloom" src="img/logo.jpg" />
+          <span class="site-name">CyberBloom</span>
+        </a>
+      </div>
+      <button
+        aria-controls="navLinks"
+        aria-expanded="false"
+        aria-label="Open menu"
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+      >
+        ☰
+      </button>
+      <nav aria-label="Main navigation" class="main-nav">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index-en.html">HOME</a></li>
+          <li><a href="sobre-en.html">ABOUT</a></li>
+          <li class="dropdown">
+            <button
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="dropbtn"
+              type="button"
+            >
+              CYBERSECURITY <span aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="malware-en.html">Malware</a></li>
+              <li><a href="engenhariasocial-en.html">Scams</a></li>
+              <li><a href="ataques-en.html">Attacks</a></li>
+              <li><a href="protecao-en.html">Security</a></li>
+            </ul>
+          </li>
+          <li><a href="bibliografia-en.html">BIBLIOGRAPHY</a></li>
+          <li class="dropdown">
+            <button
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="dropbtn"
+              type="button"
+            >
+              CREDITS <span aria-hidden="true">▾</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="active" href="creditos-en.html">Advisors</a></li>
+              <li><a href="creditos2-en.html">Developers</a></li>
+            </ul>
+          </li>
+          <li><a href="contato-en.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <div class="flags" aria-label="Language selection">
+        <a href="creditos.html" aria-label="Português">
+          <img src="img/brazilian_flag.jpg" class="flag" alt="Português" />
+        </a>
+        <a href="creditos-en.html" aria-label="English">
+          <img src="img/united_states_flag.jpg" class="flag" alt="English" />
+        </a>
+      </div>
+    </header>
+    <section class="credits-section">
+      <h2 class="section-title-line">Project Credits — Advisors</h2>
+      <br />
+      <p class="credits-intro">
+        Meet the people dedicated to building this safe and educational space
+        about cybersecurity.
+      </p>
+      <div class="team-container">
+        <div class="team-card">
+          <h3>Bruna Cação Ribeiro</h3>
+          <span class="role-badge">Portuguese Language Teacher</span>
+          <p>Bachelor’s degree in Portuguese and English Languages.</p>
+        </div>
+        <div class="team-card">
+          <h3>Célia Aparecida Barufaldi</h3>
+          <span class="role-badge">PW1 Teacher</span>
+          <p>
+            Technology degree in Data Processing<br />
+            Specialist in Systems Analysis<br />
+            Specialist in Computer Networks.
+          </p>
+        </div>
+        <div class="team-card">
+          <h3>Ricardo Matias de Oliveira</h3>
+          <span class="role-badge">English Language Teacher</span>
+          <p>
+            Bachelor’s degree in English, Portuguese, and Spanish Languages<br />
+            Pedagogy<br />
+            Business Management.
+          </p>
+        </div>
+      </div>
+      <div class="thanks-container">
+        <div class="thanks-box">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h3>Special Thanks</h3>
+          <p>
+            To our advisors, teachers, and everyone who directly contributed
+            suggestions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="bottom-banner">
+      <div class="bottom-mascot">
+        <i class="fa-solid fa-cat"></i>
+      </div>
+      <div class="bottom-quote">
+        <a
+          href="#top"
+          style="position: fixed; bottom: 20px; right: 20px; z-index: 9999"
+        >
+          <img
+            alt="Subir ao topo"
+            src="img/up.png"
+            style="width: 50px; height: auto"
+          />
+        </a>
+        <p>
+          ETEC HUMBERTO FERÚCIO GAZETTA 2026 - &amp;copyTodos os direitos
+          reservados<br />
+          Academic project with no profit purpose.
+        </p>
+        <span>Portas Abertas</span>
+      </div>
+      <div class="bottom-network">
+        <i class="fa-solid fa-hubspot"></i>
+      </div>
+    </footer>
+    <script>
+      (() => {
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+        const dropdowns = document.querySelectorAll(".navbar .dropdown");
+
+        if (!menuToggle || !navLinks) return;
+
+        menuToggle.addEventListener("click", (event) => {
+          event.stopPropagation();
+          const open = navLinks.classList.toggle("show");
+          menuToggle.setAttribute("aria-expanded", String(open));
+        });
+
+        dropdowns.forEach((dropdown) => {
+          const button = dropdown.querySelector(".dropbtn");
+          const menu = dropdown.querySelector(".dropdown-menu");
+          if (!button || !menu) return;
+
+          button.addEventListener("click", (event) => {
+            event.stopPropagation();
+            const willOpen = !menu.classList.contains("show");
+            document
+              .querySelectorAll(".navbar .dropdown-menu.show")
+              .forEach((other) => {
+                other.classList.remove("show");
+                const otherButton =
+                  other.parentElement.querySelector(".dropbtn");
+                if (otherButton)
+                  otherButton.setAttribute("aria-expanded", "false");
+              });
+            menu.classList.toggle("show", willOpen);
+            button.setAttribute("aria-expanded", String(willOpen));
+          });
+        });
+
+        document.addEventListener("click", () => {
+          document
+            .querySelectorAll(".navbar .dropdown-menu.show")
+            .forEach((menu) => menu.classList.remove("show"));
+          document
+            .querySelectorAll(".navbar .dropbtn")
+            .forEach((button) => button.setAttribute("aria-expanded", "false"));
+        });
+
+        navLinks.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            navLinks.classList.remove("show");
+            menuToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>
